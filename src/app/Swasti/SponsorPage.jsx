@@ -6,7 +6,7 @@ import Text from './Text'
 import "./trial.css"
 import Image from 'next/image';
 import photo from "./Assets/Group 143.svg"
-const Trial = () => {
+const SponsorPage = () => {
   return (
     <>
       <section className='main-sponsor'>
@@ -61,4 +61,4 @@ const Trial = () => {
     </>
   )
 }
-export default Trial;
+export default SponsorPage;

@@ -1,4 +1,6 @@
 
+"use client"
+
 import Lottie from "react-lottie";
 import animationData from "@/animations/building.json"
 
