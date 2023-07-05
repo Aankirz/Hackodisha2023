@@ -1,47 +1,64 @@
 import React from 'react'
-import Logo from "./Assets/1.png"
+// import { useState, useEffect } from 'react';
+import { Component } from 'react';
 import SponsorCompany from './SponsorCompany'
+import Text from './Text'
+import "./trial.css"
+import Image from 'next/image';
+import photo from "./Assets/Group 143.svg"
 const Trial = () => {
-  
   return (
-    <div>
-      <img src={Logo} alt="" className=' text-white' />
-      <div className='Big-dot'>
-          <div className='Mid-dot'>
-            <div className='Small-dot'>
-              <div className='container'>
-                <div className="item">
-                  <Image src={image1} alt="" />
-                </div>
+    <>
+      <section className='main-sponsor'>
+        <section className='first mt-5 pt-32'>
+          <section className='mb-40 '>
+            <div className='flex flex-col md:flex-row md:justify-between'>
+              <div className='md:mt-80 md:-ml-96 mb-20'>
+                <Text cat="SILVER" />
+              </div>
+              <div>
+                <Image src={photo} alt="" className=' hidden md:flex' />
+              </div>
+              <div className="md:mr-16">
+                <SponsorCompany />
+                <SponsorCompany />
+                <SponsorCompany />
               </div>
             </div>
-          </div>
-        </div>
-        <div className='Big-dot'>
-          <div className='Mid-dot'>
-            <div className='Small-dot'>
-              <div className='container'>
-                <div className="item">
-                  <Image src={image2} alt="" />
-                </div>
-              </div>
+          </section>
+        </section>
+        <section className='md:hidden'>
+          <div className='flex flex-col md:flex-row md:justify-between'>
+            <div className='md:mt-80 md:-ml-4 mb-20 '>
+              <Text cat="BRONZE" />
+            </div>
+            <div className="md:-ml-96">
+              <SponsorCompany />
+              <SponsorCompany />
+              <SponsorCompany />
             </div>
           </div>
-        </div>
-        <div className='Big-dot'>
-        <div className='Mid-dot'>
-          <div className='Small-dot'>
-            <div className='container'>
-              <div className="item">
-                <Image src={image3} alt="" />
-              </div>
+        </section>
+        <section className='second mt-5 pt-32'>
+        <section className='hidden md:flex'>
+          <div className='flex flex-col md:flex-row md:justify-between'>
+            <div className="md:ml-16">
+              <SponsorCompany />
+              <SponsorCompany />
+              <SponsorCompany />
+            </div>
+            <div className=''>
+            <Image src={photo} alt="" className='rotate-180' />
+
+            </div>
+            <div className='md:mt-80 md:ml-4 mb-20'>
+              <Text cat="BRONZE" />
             </div>
           </div>
-        </div>
-      </div>
-        
-    </div>
+        </section>
+        </section>
+      </section>
+    </>
   )
 }
-
-export default Trial
+export default Trial;

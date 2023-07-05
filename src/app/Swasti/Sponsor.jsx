@@ -9,7 +9,6 @@ import image6 from "./Assets/6.png"
 import Image from 'next/image'
 import SponsorCompany from './SponsorCompany'
 import Text from './Text'
-
 const Sponsor = () => {
     const images = [image1, image2, image3, image4, image5, image6]
     return (
